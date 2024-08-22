@@ -25,4 +25,4 @@ addNum("10", 20);
 // addNum([],[]) => This is error
 
 
-//Generics is the best approach for the multiple type declaration in function parameters.
+//Generics is the best approach for the multiple type declaration in function parameters..
