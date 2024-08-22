@@ -1,7 +1,3 @@
-//Infer Types or Implicit Types
-let userName = "Erfan";
-let amount = 50_000;
-
 //Defining Types (Explicit Types)
 let studetName: string = "Afnan";
 let salary: Number = 50000;
@@ -16,6 +12,7 @@ let userDetails: { name: string; age: number; salary: number | string } = {
 };
 
 //Interface
+// Interface does not allow inline type declaration.it's only allows object type declaration
 interface Details {
   name: string;
   age: number;
@@ -33,6 +30,7 @@ let newUserDetails: Details = {
 };
 
 //Type
+// Type allows inline type declaration and object type declaration
 type Detailsnew = {
   name: string;
   age: number;
@@ -67,5 +65,3 @@ let subject: (string | number | boolean)[] = [
   30,
   true,
 ];
-
-

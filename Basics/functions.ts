@@ -1,6 +1,5 @@
 //functions
-
-function getUserName(User: Details1) {
+function getUserName(User: Details1)  {
   return User.age;
 }
 type Details1 = {
@@ -15,3 +14,11 @@ let UserDetails: Details1 = {
 };
 
 getUserName(UserDetails);
+
+
+
+function sum(a: number, b: number) {
+  console.log(a + b);
+}
+
+sum(1, 3);
