@@ -1,5 +1,5 @@
 //as const or Type casting
-
+//it convert one type to another type
 //it is read only  variable
 let userName = "erfan" as const;
 
@@ -86,3 +86,45 @@ const food: Food = {
   PIZZA: "soda",
   CHICKEN: "broiler",
 };
+
+//indexing
+//another way of Record
+type Food2 = {
+  [index: string]: any;
+};
+
+const food2: Food2 = {
+  PIZZA: "soda",
+  CHICKEN: "broiler",
+  obj: {
+    name: "Abc",
+  },
+};
+
+//unknown
+let userName1: unknown = "abcdef";
+
+userName1 as String;
+
+//never
+//it doesen't return anything
+function throwError(message: string): never {
+  throw new Error(message);
+}
+
+//void
+//it doesen't return anything but it execute some code inside the functions.
+function logMessage(message: string): void {
+  console.log(message);
+}
+
+//null
+let userData: string | null = null;
+
+function getData() {
+  if (userData) {
+    return "User is found";
+  } else {
+    return "User does not found";
+  }
+}
